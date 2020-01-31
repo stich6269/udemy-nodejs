@@ -1,17 +1,36 @@
-    <%- include('./includes/head.ejs') %> 
+    <%- include('../includes/head.ejs') %> 
     <link rel="stylesheet" href="/css/form.css">
 </head>
 
 <body>
-    <%- include('./includes/navigation.ejs') %> 
+    <%- include('../includes/navigation.ejs') %> 
 
     <main>
         <main>
             <form action="/admin/add-product" method="POST">
-                <input type="text" name="title">
+                <div class="control">
+                    <label for="title">Product title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                
+                <div class="control">
+                    <label for="photo">Product photo</label>
+                    <input type="text" name="photo" id="photo">
+                </div>
+
+                <div class="control">
+                    <label for="price">Product price</label>
+                    <input type="number" name="price" id="price">
+                </div>
+                
+                <div class="control">
+                    <label for="description">Product description</label>
+                    <textarea type="description" name="description" id="description"></textarea>
+                </div>
+
                 <button type="submit">Add product</button>
             </form>
         </main>
     </main>
 
-<%- include('./includes/footer.ejs') %> 
+<%- include('../includes/footer.ejs') %> 

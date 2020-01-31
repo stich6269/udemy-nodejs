@@ -1,12 +1,11 @@
 <header>
     <nav>
         <ul>
-            <li>
-                <a href="/shop" class="<%= path === 'shop' ? 'active' : '' %>">Shop</a>
-            </li>
-            <li>
-                <a href="/admin/add-product" class="<%= path === 'add-product' ? 'active' : '' %>">Add Product</a>
-            </li>
+            <li><a href="/shop" class="<%= path === 'shop' ? 'active' : '' %>">Shop</a></li>
+            <li><a href="/shop/products" class="<%= path === 'products' ? 'active' : '' %>">Products</a></li>
+            <li><a href="/shop/card" class="<%= path === 'card' ? 'active' : '' %>">Card</a></li>
+            <li><a href="/admin/add-product" class="<%= path === 'add-product' ? 'active' : '' %>">Add Products</a></li>
+            <li><a href="/admin/products-list" class="<%= path === 'products-list' ? 'active' : '' %>">Admin products</a></li>
         </ul>
     </nav>
 </header>

@@ -1,10 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const appPath = require('./utils/path')
 const path = require('path');
 
-const adminRoutes = require('./routes/admin').router;
+const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
 app.set('view engine', 'ejs');
